@@ -43,13 +43,10 @@ body{
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
  .menu{
-    height: 150px;
-    background-color: rgb(94, 94, 238);
+    height: 120px;
+    background-color: rgb(238, 94, 202)rgb(216, 25, 168)
  }
- .conteudo-musica{
-    display: flex;
-    direction: ltr;
- }
+ 
 }
 @media screen and (min-width: 993px) and (max-width: 1080px){
     .menu{
@@ -61,3 +58,4 @@ body{
        direction: rtl;
     }
    }
+ 
