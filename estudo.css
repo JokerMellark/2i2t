@@ -4,13 +4,13 @@
 }
 
 body {
-    background-color: rgb(126, 185, 185);
+    background-color: rgb(154, 0, 243);
 }
 
 .item {
     width: 100px;
     height: 100px;
-    background-color: rgb(31, 151, 151);
+    background-color: rgb(208, 167, 255);
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -23,6 +23,7 @@ body {
 
 .meu-site {
     display: grid;
+    grid-template-columns: 20% 40% 40%;
     grid-template-areas: 
            "menu menu menu"
            "lado principal principal"  
@@ -32,20 +33,24 @@ body {
 
 .menu {
     height: 10vh;
-    background-color: rgb(1, 211, 211);
+    background-color: rgb(0, 44, 44);
+    grid-area: menu;
 }
 
 .lado {
     height: 20vh;
-    background-color: rgb(0, 185, 185);  
+    background-color: rgb(255, 255, 255);  
+    grid-area: lado;
 }
 
 .principal {
     height: 60vh;
-    background-color: rgb(0, 170, 170);  
+    background-color: rgb(14, 22, 138);  
+    grid-area: principal;
 }
 
 .rodape {
     height: 10vh;
-    background-color: rgb(0, 138, 138);  
+    background-color: rgb(200, 233, 255);  
+    grid-area: rodape;
 }
