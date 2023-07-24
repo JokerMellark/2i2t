@@ -100,19 +100,6 @@ ul {
     text-align: center;
 }
 
-
-.conceito{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.artistas{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-    display: flex;
-    flex-direction: row;
-}
-
-
 .img-ini{
     width: 100%;
     height: 100%;
