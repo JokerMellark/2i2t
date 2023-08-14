@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-color: rgb(150, 187, 255);
+    background-color: rgb(115, 151, 223);
 }
 a {
     text-decoration: none;
@@ -13,7 +13,7 @@ ul {
 }
 .menu{
     width: 100%;
-    background-color: rgb(153, 153, 232);
+    background-color: rgb(196, 196, 231);
     position: sticky;
     top: 0;
 }
@@ -99,7 +99,7 @@ ul {
 
 .rodape{
     width: 100%;
-    background-color: rgb(102, 188, 209)}
+    background-color: rgb(73, 95, 119)}
 
 .img-ini{
     width: 100%;
@@ -109,8 +109,8 @@ ul {
     width: 100vw;
     padding: 5px;
 }
-@media screen and (min-width: 820px){
-    .nav {
+@media (min-width: 820px){
+    .nav{
         max-height: none;
         top: 0;
         position: relative;
@@ -118,62 +118,97 @@ ul {
         width: fit-content;
         background-color: transparent;
     }
-    .menu li {
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--hover);
+  }
+  .hamburger {
+      display: none;
+  }
+  #logo {
+     width: 30vh;
+     height: 15vh;
+  }
+  .conteudo-musica{
+      display: grid;
+      grid-template-columns:  50% 50%;
+      grid-template-areas: "def def";
+  }
+  .definicao{
+      display: flex;
+      width: 100vw;
+  }
+  .descricao{
+      height: 100%;
+      padding: 50px;
+      width: 70vh;
+  }
+  .img-definicao{
+      display: block;
+      text-align: end;
+      height: 30vh;
+      width: 30vw;
+  }
+  #img-definicao{
+  width: 20%;
+  height: 10%;
+  }
+  .info{
+      grid-template-columns: 100% 100%;
+      grid-template-areas: "item item";
+  }
+  div[class^="item-"]{
+      margin-right: 2px;
+  }
+  } 
+  
+  @media (min-width: 1024px) {
+      .nav{
+          max-height: none;
+          top: 0;
+          position: relative;
+          float: right;
+          width: fit-content;
+          background-color: transparent;
+      }
+    .menu li{
         float: left;
     }
     .menu a:hover{
         background-color: transparent;
-        color: rgb(73, 194, 255);
+        color: var(--hover);
     }
     .hamburger {
         display: none;
     }
     #logo {
-        width: 20vh;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .menu{
-       height: 200px;
-       background-color: rgb(87, 87, 241);
-       font-size: 54px;
-    }
-    .img-ini{
-        width: 50%;
-    }
-    .desc-solo{
-        display: flex;
-    }
-   }
-
-   @media screen and (min-width: 820px){
-
-   
-    .nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-    }
-    .menu li {
-        float: left;
-    }
-    .menu a:hover{
-        background-color: transparent;
-        color: rgb(73, 194, 255);
-    }
-    .hamburger {
-        display: none;
-    }
-    #logo {
-        width: 20vh;
+       width: 60vh;
+       height: 30vh;
     }
     .conteudo-musica{
         display: grid;
-        grid-template-columns: 33% 34% 35%
-        grid-template-areas def def def;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-areas: "def def def";
     }
-}
+  
+      .menu{
+          height: 50px;
+          background-color: var(--fundo);
+          color:black;
+          font-size: 64px;
+          padding: 10px;
+      }
+      .img-ini{
+          width: 50%;
+      }
+      .desc-solo {
+          display: grid;
+      }
+      .info{
+          grid-template-columns: 100% 100% 100%;
+          grid-template-areas: "item item item";
+      }
+  }
